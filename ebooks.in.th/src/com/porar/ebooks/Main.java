@@ -26,7 +26,7 @@ public class Main extends Activity {
         webSetting = webViewDefault.getSettings();
         webSetting.setJavaScriptEnabled(true);
         
-        //load data from file
+        //Load data from file
         webViewDefault.loadUrl(HTMLFile.ReadTemplate("default.html"));
         jsInterface = new JSInterface(webViewDefault);
         jsInterface.setOnCallToastListener(new IToastListener(){
